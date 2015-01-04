@@ -1,0 +1,17 @@
+@echo off
+git submodule update --init --force -- "Cores/beetle-ngp-libretro"
+git submodule update --init --force -- "Cores/beetle-pce-fast-libretro"
+git submodule update --init --force -- "Cores/beetle-vb-libretro"
+git submodule update --init --force -- "Cores/beetle-wswan-libretro"
+git submodule update --init --force -- "Cores/fba-libretro"
+git submodule update --init --force -- "Cores/Genesis-Plus-GX"
+git submodule update --init --force -- "Cores/libretro-fceumm"
+git submodule update --init --force -- "Cores/libretro-prboom"
+git submodule update --init --force -- "Cores/mame2003-libretro"
+git submodule update --init --force -- "Cores/nxengine-libretro"
+git submodule update --init --force -- "Cores/snes9x-next"
+git submodule update --init --force -- "Cores/tyrquake"
+git submodule update --init --force -- "Cores/vba-next"
+git submodule update --init --force -- "Cores/nestopia"
+git submodule update --init --force -- "RetroArch"
+pause
