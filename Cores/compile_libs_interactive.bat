@@ -121,40 +121,45 @@ del *.lib
 
 set COREDIR=%CD%
 
+set compile=
 SET /P compile=Do you want to compile beetle-ngp-libretro? [y/n]:
-if (%compile% == "y") do (
+IF '%compile%' == 'y' (
 cd beetle-ngp-libretro\msvc
 msbuild msvc-2010-360.sln /p:Configuration=Release_LTCG /target:clean
 msbuild msvc-2010-360.sln /p:Configuration=Release_LTCG
 cd %COREDIR%
 copy beetle-ngp-libretro\msvc\msvc-2010-360\Release_LTCG\msvc-2010-360.lib beetle-ngp-libretro.lib)
 
+set compile=
 SET /P compile=Do you want to compile beetle-pce-fast-libretro? [y/n]:
-if (%compile% == "y") do (
+IF '%compile%' == 'y' (
 cd beetle-pce-fast-libretro\msvc
 msbuild msvc-2010-360.sln /p:Configuration=Release_LTCG /target:clean
 msbuild msvc-2010-360.sln /p:Configuration=Release_LTCG
 cd %COREDIR%
 copy beetle-pce-fast-libretro\msvc\msvc-2010-360\Release_LTCG\msvc-2010-360.lib beetle-pce-fast-libretro.lib)
 
+set compile=
 SET /P compile=Do you want to compile beetle-vb-libretro? [y/n]:
-if (%compile% == "y") do (
+IF '%compile%' == 'y' (
 cd beetle-vb-libretro\msvc
 msbuild msvc-2010-360.sln /p:Configuration=Release_LTCG /target:clean
 msbuild msvc-2010-360.sln /p:Configuration=Release_LTCG
 cd %COREDIR%
 copy beetle-vb-libretro\msvc\msvc-2010-360\Release_LTCG\msvc-2010-360.lib beetle-vb-libretro.lib)
 
+set compile=
 SET /P compile=Do you want to compile beetle-wswan-libretro? [y/n]:
-if (%compile% == "y") do (
+IF '%compile%' == 'y' (
 cd beetle-wswan-libretro\msvc
 msbuild msvc-2010-360.sln /p:Configuration=Release_LTCG /target:clean
 msbuild msvc-2010-360.sln /p:Configuration=Release_LTCG
 cd %COREDIR%
 copy beetle-wswan-libretro\msvc\msvc-2010-360\Release_LTCG\msvc-2010-360.lib beetle-wswan-libretro.lib)
 
+set compile=
 SET /P compile=Do you want to compile fba-libretro? [y/n]:
-if (%compile% == "y") do (
+IF '%compile%' == 'y' (
 cd fba-libretro\svn-current\trunk\projectfiles\msvc-libretro
 cd 
 msbuild msvc-2010-360.sln /p:Configuration=Release_LTCG /target:clean
@@ -162,72 +167,81 @@ msbuild msvc-2010-360.sln /p:Configuration=Release_LTCG
 cd %COREDIR%
 copy fba-libretro\svn-current\trunk\projectfiles\msvc-libretro\Release_LTCG\msvc-2010-360.lib fba-libretro.lib)
 
+set compile=
 SET /P compile=Do you want to compile Genesis-Plus-GX? [y/n]:
-if (%compile% == "y") do (
+IF '%compile%' == 'y' (
 cd Genesis-Plus-GX\libretro\msvc
 msbuild msvc-2010-360.sln /p:Configuration=Release_LTCG /target:clean
 msbuild msvc-2010-360.sln /p:Configuration=Release_LTCG
 cd %COREDIR%
 copy Genesis-Plus-GX\libretro\msvc\msvc-2010-360\Release_LTCG\msvc-2010-360.lib Genesis-Plus-GX.lib)
 
+set compile=
 SET /P compile=Do you want to compile libretro-fceumm? [y/n]:
-if (%compile% == "y") do (
+IF '%compile%' == 'y' (
 cd libretro-fceumm\src\drivers\libretro\msvc
 msbuild msvc-2010-360.sln /p:Configuration=Release_LTCG /target:clean
 msbuild msvc-2010-360.sln /p:Configuration=Release_LTCG
 cd %COREDIR%
 copy libretro-fceumm\src\drivers\libretro\msvc\msvc-2010-360\Release_LTCG\msvc-2010-360.lib libretro-fceumm.lib)
 
+set compile=
 SET /P compile=Do you want to compile libretro-prboom? [y/n]:
-if (%compile% == "y") do (
+IF '%compile%' == 'y' (
 cd libretro-prboom\libretro\msvc
 msbuild msvc-2010-360.sln /p:Configuration=Release_LTCG /target:clean
 msbuild msvc-2010-360.sln /p:Configuration=Release_LTCG
 cd %COREDIR%
 copy libretro-prboom\libretro\msvc\msvc-2010-360\Release_LTCG\msvc-2010-360.lib libretro-prboom.lib)
 
+set compile=
 SET /P compile=Do you want to compile mame2003-libretro? [y/n]:
-if (%compile% == "y") do (
+IF '%compile%' == 'y' (
 cd mame2003-libretro\src\libretro\msvc
 msbuild msvc-2010-360.sln /p:Configuration=Release_LTCG /target:clean
 msbuild msvc-2010-360.sln /p:Configuration=Release_LTCG
 cd %COREDIR%
 copy mame2003-libretro\src\libretro\msvc\msvc-2010-360\Release_LTCG\msvc-2010-360.lib mame2003-libretro.lib)
 
+set compile=
 SET /P compile=Do you want to compile nxengine-libretro? [y/n]:
-if (%compile% == "y") do (
+IF '%compile%' == 'y' (
 cd nxengine-libretro\nxengine\libretro\msvc
 msbuild msvc-2010-360.sln /p:Configuration=Release_LTCG /target:clean
 msbuild msvc-2010-360.sln /p:Configuration=Release_LTCG
 cd %COREDIR%
 copy nxengine-libretro\nxengine\libretro\msvc\msvc-2010-360\Release_LTCG\msvc-2010-360.lib nxengine-libretro.lib)
 
+set compile=
 SET /P compile=Do you want to compile snes9x-next? [y/n]:
-if (%compile% == "y") do (
+IF '%compile%' == 'y' (
 cd snes9x-next\libretro\msvc
 msbuild msvc-2010-360.sln /p:Configuration=Release_LTCG /target:clean
 msbuild msvc-2010-360.sln /p:Configuration=Release_LTCG
 cd %COREDIR%
 copy snes9x-next\libretro\msvc\msvc-2010-360\Release_LTCG\msvc-2010-360.lib snes9x-next.lib)
 
+set compile=
 SET /P compile=Do you want to compile tyrquake? [y/n]:
-if (%compile% == "y") do (
+IF '%compile%' == 'y' (
 cd tyrquake\libretro\msvc
 msbuild msvc-2010-360.sln /p:Configuration=Release_LTCG /target:clean
 msbuild msvc-2010-360.sln /p:Configuration=Release_LTCG
 cd %COREDIR%
 copy tyrquake\libretro\msvc\msvc-2010-360\Release_LTCG\msvc-2010-360.lib tyrquake.lib)
 
+set compile=
 SET /P compile=Do you want to compile vba-next? [y/n]:
-if (%compile% == "y") do (
+IF '%compile%' == 'y' (
 cd vba-next\libretro\msvc
 msbuild msvc-2010-360.sln /p:Configuration=Release_LTCG /target:clean
 msbuild msvc-2010-360.sln /p:Configuration=Release_LTCG
 cd %COREDIR%
 copy vba-next\libretro\msvc\msvc-2010-360\Release_LTCG\msvc-2010-360.lib vba-next.lib)
 
+set compile=
 SET /P compile=Do you want to compile nestopia? [y/n]:
-if (%compile% == "y") do (
+IF '%compile%' == 'y' (
 cd nestopia\libretro\msvc
 msbuild msvc-2010-360.sln /p:Configuration=Release_LTCG /target:clean
 msbuild msvc-2010-360.sln /p:Configuration=Release_LTCG
