@@ -119,89 +119,89 @@ del *.lib
 
 :end
 
-set OLDDIR=%CD%
+set COREDIR=%CD%
 
 cd beetle-ngp-libretro\msvc
 msbuild msvc-2010-360.sln /p:Configuration=Release_LTCG /target:clean
 msbuild msvc-2010-360.sln /p:Configuration=Release_LTCG
-cd %OLDDIR%
+cd %COREDIR%
 copy beetle-ngp-libretro\msvc\msvc-2010-360\Release_LTCG\msvc-2010-360.lib beetle-ngp-libretro.lib
 
 cd beetle-pce-fast-libretro\msvc
 msbuild msvc-2010-360.sln /p:Configuration=Release_LTCG /target:clean
 msbuild msvc-2010-360.sln /p:Configuration=Release_LTCG
-cd %OLDDIR%
+cd %COREDIR%
 copy beetle-pce-fast-libretro\msvc\msvc-2010-360\Release_LTCG\msvc-2010-360.lib beetle-pce-fast-libretro.lib
 
 cd beetle-vb-libretro\msvc
 msbuild msvc-2010-360.sln /p:Configuration=Release_LTCG /target:clean
 msbuild msvc-2010-360.sln /p:Configuration=Release_LTCG
-cd %OLDDIR%
+cd %COREDIR%
 copy beetle-vb-libretro\msvc\msvc-2010-360\Release_LTCG\msvc-2010-360.lib beetle-vb-libretro.lib
 
 cd beetle-wswan-libretro\msvc
 msbuild msvc-2010-360.sln /p:Configuration=Release_LTCG /target:clean
 msbuild msvc-2010-360.sln /p:Configuration=Release_LTCG
-cd %OLDDIR%
+cd %COREDIR%
 copy beetle-wswan-libretro\msvc\msvc-2010-360\Release_LTCG\msvc-2010-360.lib beetle-wswan-libretro.lib
 
 cd fba-libretro\svn-current\trunk\projectfiles\msvc-libretro
 cd 
 msbuild msvc-2010-360.sln /p:Configuration=Release_LTCG /target:clean
 msbuild msvc-2010-360.sln /p:Configuration=Release_LTCG
-cd %OLDDIR%
+cd %COREDIR%
 copy fba-libretro\svn-current\trunk\projectfiles\msvc-libretro\Release_LTCG\msvc-2010-360.lib fba-libretro.lib
 
 cd Genesis-Plus-GX\libretro\msvc
 msbuild msvc-2010-360.sln /p:Configuration=Release_LTCG /target:clean
 msbuild msvc-2010-360.sln /p:Configuration=Release_LTCG
-cd %OLDDIR%
+cd %COREDIR%
 copy Genesis-Plus-GX\libretro\msvc\msvc-2010-360\Release_LTCG\msvc-2010-360.lib Genesis-Plus-GX.lib
 
 cd libretro-fceumm\src\drivers\libretro\msvc
 msbuild msvc-2010-360.sln /p:Configuration=Release_LTCG /target:clean
 msbuild msvc-2010-360.sln /p:Configuration=Release_LTCG
-cd %OLDDIR%
+cd %COREDIR%
 copy libretro-fceumm\src\drivers\libretro\msvc\msvc-2010-360\Release_LTCG\msvc-2010-360.lib libretro-fceumm.lib
 
 cd libretro-prboom\libretro\msvc
 msbuild msvc-2010-360.sln /p:Configuration=Release_LTCG /target:clean
 msbuild msvc-2010-360.sln /p:Configuration=Release_LTCG
-cd %OLDDIR%
+cd %COREDIR%
 copy libretro-prboom\libretro\msvc\msvc-2010-360\Release_LTCG\msvc-2010-360.lib libretro-prboom.lib
 
 cd mame2003-libretro\src\libretro\msvc
 msbuild msvc-2010-360.sln /p:Configuration=Release_LTCG /target:clean
 msbuild msvc-2010-360.sln /p:Configuration=Release_LTCG
-cd %OLDDIR%
+cd %COREDIR%
 copy mame2003-libretro\src\libretro\msvc\msvc-2010-360\Release_LTCG\msvc-2010-360.lib mame2003-libretro.lib
 
 cd nxengine-libretro\nxengine\libretro\msvc
 msbuild msvc-2010-360.sln /p:Configuration=Release_LTCG /target:clean
 msbuild msvc-2010-360.sln /p:Configuration=Release_LTCG
-cd %OLDDIR%
+cd %COREDIR%
 copy nxengine-libretro\nxengine\libretro\msvc\msvc-2010-360\Release_LTCG\msvc-2010-360.lib nxengine-libretro.lib
 
 cd snes9x-next\libretro\msvc
 msbuild msvc-2010-360.sln /p:Configuration=Release_LTCG /target:clean
 msbuild msvc-2010-360.sln /p:Configuration=Release_LTCG
-cd %OLDDIR%
+cd %COREDIR%
 copy snes9x-next\libretro\msvc\msvc-2010-360\Release_LTCG\msvc-2010-360.lib snes9x-next.lib
 
 cd tyrquake\libretro\msvc
 msbuild msvc-2010-360.sln /p:Configuration=Release_LTCG /target:clean
 msbuild msvc-2010-360.sln /p:Configuration=Release_LTCG
-cd %OLDDIR%
+cd %COREDIR%
 copy tyrquake\libretro\msvc\msvc-2010-360\Release_LTCG\msvc-2010-360.lib tyrquake.lib
 
 cd vba-next\libretro\msvc
 msbuild msvc-2010-360.sln /p:Configuration=Release_LTCG /target:clean
 msbuild msvc-2010-360.sln /p:Configuration=Release_LTCG
-cd %OLDDIR%
+cd %COREDIR%
 copy vba-next\libretro\msvc\msvc-2010-360\Release_LTCG\msvc-2010-360.lib vba-next.lib
 
 cd nestopia\libretro\msvc
 msbuild msvc-2010-360.sln /p:Configuration=Release_LTCG /target:clean
 msbuild msvc-2010-360.sln /p:Configuration=Release_LTCG
-cd %OLDDIR%
+cd %COREDIR%
 copy nestopia\libretro\msvc\msvc-2010-360\Release_LTCG\msvc-2010-360.lib nestopia.lib
