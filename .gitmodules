@@ -1,0 +1,45 @@
+[submodule "RetroArch"]
+	path = RetroArch
+	url = https://github.com/libretro/RetroArch.git
+[submodule "Cores/beetle-ngp-libretro"]
+	path = Cores/beetle-ngp-libretro
+	url = https://github.com/libretro/beetle-ngp-libretro.git
+[submodule "Cores/beetle-pce-fast-libretro"]
+	path = Cores/beetle-pce-fast-libretro
+	url = https://github.com/libretro/beetle-pce-fast-libretro.git
+[submodule "Cores/beetle-vb-libretro"]
+	path = Cores/beetle-vb-libretro
+	url = https://github.com/libretro/beetle-vb-libretro.git
+[submodule "Cores/beetle-wswan-libretro"]
+	path = Cores/beetle-wswan-libretro
+	url = https://github.com/libretro/beetle-wswan-libretro.git
+[submodule "Cores/fba-libretro"]
+	path = Cores/fba-libretro
+	url = https://github.com/libretro/fba-libretro.git
+[submodule "Cores/Genesis-Plus-GX"]
+	path = Cores/Genesis-Plus-GX
+	url = https://github.com/libretro/Genesis-Plus-GX.git
+[submodule "Cores/libretro-fceumm"]
+	path = Cores/libretro-fceumm
+	url = https://github.com/libretro/libretro-fceumm.git
+[submodule "Cores/libretro-prboom"]
+	path = Cores/libretro-prboom
+	url = https://github.com/libretro/libretro-prboom.git
+[submodule "Cores/mame2003-libretro"]
+	path = Cores/mame2003-libretro
+	url = https://github.com/libretro/mame2003-libretro.git
+[submodule "Cores/nxengine-libretro"]
+	path = Cores/nxengine-libretro
+	url = https://github.com/libretro/nxengine-libretro.git
+[submodule "Cores/snes9x-next"]
+	path = Cores/snes9x-next
+	url = https://github.com/libretro/snes9x-next.git
+[submodule "Cores/tyrquake"]
+	path = Cores/tyrquake
+	url = https://github.com/libretro/tyrquake.git
+[submodule "Cores/vba-next"]
+	path = Cores/vba-next
+	url = https://github.com/libretro/vba-next.git
+[submodule "Cores/nestopia"]
+	path = Cores/nestopia
+	url = https://github.com/libretro/nestopia.git
