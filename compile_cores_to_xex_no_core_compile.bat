@@ -120,9 +120,6 @@
 
 set OLDDIR=%CD%
 rmdir Output\ /s /q
-cd Cores
-@call compile_libs_interactive.bat
-cd %OLDDIR%
 mkdir Output\
 for /r %%i in (Cores\*.lib) do (
 rmdir RetroArch\msvc\RetroArch-360\Release_LTCG /s /q

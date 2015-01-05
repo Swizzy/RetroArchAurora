@@ -119,22 +119,26 @@
 :end
 
 set OLDDIR=%CD%
+rmdir Output\ /s /q
 cd Cores
 @call compile_libs.bat
 cd %OLDDIR%
-mkdir RetroArch\msvc\RetroArch-360\Release_LTCG
-rmdir Output\ /s /q
 mkdir Output\
 for /r %%i in (Cores\*.lib) do (
-mkdir Output\%%~ni
+rmdir RetroArch\msvc\RetroArch-360\Release_LTCG /s /q
+mkdir RetroArch\msvc\RetroArch-360\Release_LTCG
 copy %%i RetroArch\msvc\RetroArch-360\Release_LTCG\libretro_xdk360.lib
 cd RetroArch\msvc
 msbuild RetroArch-360.sln /t:RetroArch-360:clean /p:Configuration=Release_LTCG /p:BuildProjectReferences=false
 msbuild RetroArch-360.sln /t:RetroArch-360 /p:Configuration=Release_LTCG /p:BuildProjectReferences=false
 cd %OLDDIR%
+mkdir Output\%%~ni
+mkdir Output\%%~ni\media
 copy RetroArch\msvc\RetroArch-360\Release_LTCG\CORE.xex Output\%%~ni\default.xex
-copy RetroArch\msvc\RetroArch-360\Release_LTCG\CORE.xex Output\%%~ni.xex
-del RetroArch\msvc\RetroArch-360\Release_LTCG\CORE.xex
-REM TODO: Add copy media folder to output directory
+xcopy RetroArch\msvc\RetroArch-360\Release_LTCG\media Output\%%~ni\media\ /Q /Y /E
+copy retroarch.cfg Output\%%~ni\
+mkdir Output\%%~ni\roms\
+IF EXIST LUA\%%~ni.lua copy LUA\%%~ni.lua Output\%%~ni\emulator.lua
+IF NOT EXIST LUA\%%~ni.lua copy LUA\emulator.lua Output\%%~ni\emulator.lua'
 )
 pause
