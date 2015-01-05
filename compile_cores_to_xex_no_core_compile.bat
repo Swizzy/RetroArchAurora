@@ -133,9 +133,11 @@ mkdir Output\%%~ni
 mkdir Output\%%~ni\media
 copy RetroArch\msvc\RetroArch-360\Release_LTCG\CORE.xex Output\%%~ni\default.xex
 xcopy RetroArch\msvc\RetroArch-360\Release_LTCG\media Output\%%~ni\media\ /Q /Y /E
+xcopy Extras\_all Output\%%~ni\ /Q /Y /E
+xcopy Extras\%%~ni Output\%%~ni\ /Q /Y /E
 copy retroarch.cfg Output\%%~ni\
 mkdir Output\%%~ni\roms\
 IF EXIST LUA\%%~ni.lua copy LUA\%%~ni.lua Output\%%~ni\emulator.lua
-IF NOT EXIST LUA\%%~ni.lua copy LUA\emulator.lua Output\%%~ni\emulator.lua'
+IF NOT EXIST LUA\%%~ni.lua copy LUA\emulator.lua Output\%%~ni\emulator.lua
 )
 pause
