@@ -43,3 +43,6 @@
 [submodule "Cores/nestopia"]
 	path = Cores/nestopia
 	url = https://github.com/libretro/nestopia.git
+[submodule "Cores/gambatte-libretro"]
+	path = Cores/gambatte-libretro
+	url = https://github.com/libretro/gambatte-libretro.git

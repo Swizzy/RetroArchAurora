@@ -42,4 +42,8 @@ git pull https://github.com/libretro/vba-next.git
 cd %OLDDIR%
 cd Cores\nestopia
 git pull https://github.com/libretro/nestopia.git
+cd %OLDDIR%
+cd Cores\gambatte-libretro
+git pull https://github.com/libretro/gambatte-libretro.git
+cd %OLDDIR%
 pause

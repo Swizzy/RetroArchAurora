@@ -205,3 +205,9 @@ msbuild msvc-2010-360.sln /p:Configuration=Release_LTCG /target:clean
 msbuild msvc-2010-360.sln /p:Configuration=Release_LTCG
 cd %COREDIR%
 copy nestopia\libretro\msvc\msvc-2010-360\Release_LTCG\msvc-2010-360.lib nestopia.lib
+
+cd gambatte-libretro\libgambatte\libretro\msvc
+msbuild msvc-2010-360.sln /p:Configuration=Release_LTCG /target:clean
+msbuild msvc-2010-360.sln /p:Configuration=Release_LTCG
+cd %COREDIR%
+copy gambatte-libretro\libgambatte\libretro\msvc\msvc-2010-360\Release_LTCG\msvc-2010-360.lib gambatte-libretro.lib

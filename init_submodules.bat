@@ -1,4 +1,5 @@
 @echo off
+git submodule update --init --force -- "RetroArch"
 git submodule update --init --force -- "Cores/beetle-ngp-libretro"
 git submodule update --init --force -- "Cores/beetle-pce-fast-libretro"
 git submodule update --init --force -- "Cores/beetle-vb-libretro"
@@ -13,5 +14,5 @@ git submodule update --init --force -- "Cores/snes9x-next"
 git submodule update --init --force -- "Cores/tyrquake"
 git submodule update --init --force -- "Cores/vba-next"
 git submodule update --init --force -- "Cores/nestopia"
-git submodule update --init --force -- "RetroArch"
+git submodule update --init --force -- "Cores/gambatte-libretro"
 pause
